@@ -1,0 +1,178 @@
+.popup{
+    
+
+    
+   
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left:0;
+    background-color:rgba(0, 0, 0, 0.889);
+    z-index: 10000;
+
+    @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+
+        -webkit-backdrop-filter: blur(10px);
+        background-color:rgba(0, 0, 0, 0.289);
+        backdrop-filter: blur(10px);
+    }
+    
+
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transform: all .3s;
+
+    &:target{
+
+        opacity: 1;
+        visibility: visible;
+
+    }
+
+   &__close{
+    text-decoration: none;
+    font-size: 3rem;
+    line-height: 0;
+    transition: all 0.3s;
+
+    
+    
+    &:link,&:visited{
+    color: $color-text-grey-dark;
+    position: absolute;
+    top:3rem;
+    right: 3rem;
+    display: inline-block;
+        }
+
+    &:hover{
+
+        color: $color-primary;
+
+    }
+
+   }
+
+
+
+
+    &-content{
+        
+        background-color:$color-white;
+        width: 70%;
+        height: 60%;
+        position: fixed;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+
+        @include respond(x1000){
+            width: 70%;
+            height: 50%;
+        }
+
+        @include respond(tab-pot){
+            width: 95%;
+            height: 60%;
+        }
+        
+        &__main-box-images{
+           
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 1px;
+            
+            
+
+            
+            
+            &--1{
+                height: 90%;
+                width: 90%;
+                
+               
+                margin: .5rem 0;
+                padding: 0;
+                display: block;
+
+                @include respond(tab-pot){
+                    display: none;
+                }
+                
+
+            }
+
+            &--2{
+               
+                height: 90%;
+                width: 90%;
+                margin: .5rem 0;
+                padding: 0;
+                display: block;
+                overflow: hidden;
+                @include respond(tab-pot){
+                    display: none;
+                }
+
+               
+            }
+
+
+        }
+
+
+        &__main-box-text{
+
+
+
+            
+        }
+        
+
+    }
+
+
+
+
+
+
+
+
+
+}
+
+
+.popup-content__main-box-text{
+
+@include clearfix();
+
+}
+
+
+
+
+
+
+.popup--column2{
+    display: inline-block;
+    text-align: left;
+   
+    overflow: hidden;
+    width: 35%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    
+    
+        @include respond(tab-pot){
+            
+            width: 90%;
+        }
+   
+   
+    
+    
+}

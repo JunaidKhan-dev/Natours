@@ -1,0 +1,41 @@
+//animations contains animations of the website
+
+
+/* Header animation*/
+
+@keyframes moveinleft {
+    0% {
+        transform: translateX(-10rem) rotate(-259deg);
+    }
+    80% {
+        transform: translatex(1rem);
+    }
+    100% {
+        transform: translateX(0)rotate(359deg);
+    }
+}
+
+@keyframes moveinright {
+    0% {
+        transform: translateX(10rem);
+    }
+    80% {
+        transform: translatex(-1rem);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+//button animation
+@keyframes moveinbottom {
+    0% {
+        opacity: 0;
+        transform: translateY(1em);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+

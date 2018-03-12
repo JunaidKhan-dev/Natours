@@ -1,0 +1,59 @@
+.composition{
+position: relative;
+
+&__photo{
+    width: 66%;
+    box-shadow: 0 1.5rem 4rem rgba($color-black,.4);
+    position: absolute;
+    z-index: 10;
+    transition: all 0.2s;
+
+    &--p1{
+
+        left: 0;
+        top: -2rem;
+
+    }
+
+
+    &--p2{
+        right: 0;
+        top: 2rem;
+        
+    }
+
+
+
+    &--p3{
+        left: 20%; //20% move from the left
+        top: 10rem; 
+    }
+
+    &:hover{
+
+        z-index: 20;
+        outline: 1.5rem solid $color-primary;
+        outline-offset: 2rem;      
+        transform: scale(1.1) translateY(-.5rem);
+        box-shadow: 0 2.5rem 4rem rgba($color-black,.5);
+
+        
+    }
+
+   
+
+    }
+
+  &:hover  &__photo:not(:hover){
+    transform: scale(.93);
+    //put hover under composition and then look for photo element and see not hover image and make them 10% smaller! 
+  }  
+
+
+}
+
+
+
+
+
+

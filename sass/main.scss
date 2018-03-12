@@ -1,0 +1,60 @@
+@import "abstracts/_functions.scss";
+@import "abstracts/_mixins.scss";
+@import "abstracts/_variables.scss";
+@import "base/_base.scss";
+@import "base/_animations.scss";
+@import "base/_typography.scss";
+@import "base/_utilities.scss";
+@import "components/_buttons.scss";
+@import "components/_cards.scss";
+@import "components/_story.scss";
+@import "components/_compositions.scss";
+@import  "components/_popup.scss";
+@import "components/_bgvideo.scss";
+@import "components/_featues-box.scss";
+@import "components/_form.scss";
+@import "layout/_header.scss";
+@import "layout/_footer.scss";
+@import "layout/_navi.scss";
+@import "layout/_grid.scss";
+@import "pages/_home.scss";
+
+/*
+
+sass 7/1 pattern order to import files and folders
+
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/placeholders';
+
+@import 'vendors/bootstrap';
+@import 'vendors/jquery-ui';
+
+@import 'base/reset';
+@import 'base/typography';
+
+@import 'layout/navigation';
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/sidebar';
+@import 'layout/forms';
+
+@import 'components/buttons';
+@import 'components/carousel';
+@import 'components/cover';
+@import 'components/dropdown';
+
+@import 'pages/home';
+@import 'pages/contact';
+
+@import 'themes/theme';
+@import 'themes/admin';
+
+
+
+*/
+
+
+
